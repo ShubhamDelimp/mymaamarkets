@@ -3557,3 +3557,106 @@
   	object-fit: cover;
 }
 
+.openLiveAccountFrame,
+.openLiveAccountWrapper,
+.openLiveAccountContainer,
+.openLiveAccountWrapper2,
+.hpOpenLiveAccountWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 30px;
+  background: #19c69a;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+  box-shadow: 0 2px 10px rgba(25,198,154,.20);
+}
+.openLiveAccountFrame:hover,
+.openLiveAccountWrapper:hover,
+.openLiveAccountContainer:hover,
+.openLiveAccountWrapper2:hover,
+.hpOpenLiveAccountWrapper:hover {
+  transform: translateY(-2px);
+  background: #17b08e;
+  box-shadow: 0 8px 24px rgba(25,198,154,.35);
+}
+.openLiveAccountFrame:focus-within,
+.openLiveAccountWrapper:focus-within,
+.openLiveAccountContainer:focus-within,
+.openLiveAccountWrapper2:focus-within,
+.hpOpenLiveAccountWrapper:focus-within {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.openLiveAccount { letter-spacing: .02em; }
+
+/* --- Hero responsiveness (non-destructive overrides) --- */
+.hp { --page-x: 24px; }
+
+@media (max-width: 1440px) {
+  .seamlessAccessToContainer { left: var(--page-x); right: var(--page-x); width: auto; }
+}
+
+@media (max-width: 1280px) {
+  .seamlessAccessToContainer { font-size: 48px; }
+  .openLiveAccountFrame { left: var(--page-x); }
+}
+
+@media (max-width: 1024px) {
+  .hp { font-size: 16px; }
+  .tradingParent { display: none; } /* hide mega nav on tablets/phones; keep your static layout intact */
+  .seamlessAccessToContainer { top: 260px; }
+}
+
+@media (max-width: 768px) {
+  .seamlessAccessToContainer { font-size: 36px; top: 220px; left: var(--page-x); right: var(--page-x); }
+  .lineParent { left: var(--page-x); width: 240px; }
+  .openLiveAccountFrame { top: 520px; left: var(--page-x); min-width: 220px; }
+  .tryDemo { left: calc(var(--page-x) + 260px); top: 532px; }
+}
+
+@media (max-width: 520px) {
+  .seamlessAccessToContainer { font-size: 30px; }
+  .tryDemo { position: absolute; display: inline-block; left: var(--page-x); top: 588px; }
+}
+/* --- TradingView boxes replacing hpChild10 / hpChild9 --- */
+.tvWrapRight {
+  position: absolute;
+  top: 946px;
+  left: 1279px;           /* same as .hpChild9 */
+  width: 210px;
+  height: 110px;
+  border-radius: 20px;
+  background: #0e2a3f;    /* dark bg so the dark widget blends; tweak if needed */
+  overflow: hidden;
+}
+
+.tvWrapLeft {
+  position: absolute;
+  top: 946px;
+  left: 1047px;           /* same as .hpChild10 */
+  width: 210px;
+  height: 110px;
+  border-radius: 20px;
+  background: #0e2a3f;
+  overflow: hidden;
+}
+
+/* Make the embedded widget naturally fill the box */
+/* --- TradingView Ticker Tape (replaces .groupContainer) --- */
+.tvTicker {
+  position: absolute;
+  top: 2132px;   /* same as your old groupContainer */
+  left: -45px;
+  width: 2060px;
+  height: 39px;
+  overflow: hidden;
+}
+
+/* Make the embedded widget fill the wrapper (global, not module-scoped) */
+
+

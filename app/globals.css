@@ -17,3 +17,13 @@ html, body {
   margin: 0 auto;
   position: relative;
 }
+:global(.tradingview-widget-container),
+:global(.tradingview-widget-container__widget) {
+  width: 100%;
+  height: 100%;
+}
+:global(.tradingview-widget-container),
+:global(.tradingview-widget-container__widget) {
+  width: 100%;
+  height: 100%;
+}
