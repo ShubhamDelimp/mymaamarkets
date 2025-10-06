@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.app_en__L_Pbs div {
+    background: transparent !important;
+    border: 0 !important;
+    font-weight: 500 !important;
+    top: -10px;
+}
+
 html, body {
   margin: 0;
   padding: 0;
