@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import styles from '../app/index.module.css';
+import Link from "next/link";
 function TVTickerInner({
   symbols = [
     { proName: "FOREXCOM:SPXUSD", title: "S&P 500 Index" },
@@ -197,12 +198,16 @@ const HP:NextPage = () => {
       <Image className={styles.vectorIcon} width={12} height={7.8} sizes="100vw" alt="" src="/images/blank.png" unoptimized />
       <Image className={styles.hpChild6} width={22.7} height={21.5} sizes="100vw" alt="" src="/images/blank.png" unoptimized />
       <div className={styles.signInButton}>
+        <Link href={"https://cp.mymaamarkets.com/Home/Signup"} >
         <div className={styles.rectangle} />
         <div className={styles.register}>Register</div>
+        </Link>
       </div>
       <div className={styles.rectangleParent}>
+        <Link href={"https://cp.mymaamarkets.com/"} >
         <div className={styles.hpRectangle} />
         <div className={styles.register}>Login</div>
+        </Link>
       </div>
       <div className={styles.tradingParent}>
         <div className={styles.trading}>TRADING</div>
