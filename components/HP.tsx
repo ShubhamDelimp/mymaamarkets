@@ -12,7 +12,7 @@ function TVTickerInner({
     { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
     { proName: "BITSTAMP:ETHUSD", title: "Ethereum" },
   ],
-  colorTheme = "dark",
+  colorTheme = "light",
   displayMode = "adaptive",
   isTransparent = false,
 }: {
@@ -51,7 +51,7 @@ function TVTickerInner({
   );
 }
 const TVTicker = dynamic(() => Promise.resolve(TVTickerInner), { ssr: false });
-function TVQuoteInner({ symbol, width = "100%", colorTheme = "dark" }: { symbol: string; width?: number | string; colorTheme?: "light" | "dark" }) {
+function TVQuoteInner({ symbol, width = "100%", colorTheme = "light" }: { symbol: string; width?: number | string; colorTheme?: "light" | "dark" }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -119,7 +119,7 @@ const HP:NextPage = () => {
       <div className={styles.rr} />
       <div className={styles.wrapperYidianlingxiAHighTeParent}>
         <div className={styles.wrapperYidianlingxiAHighTe}>
-          <Image className={styles.yidianlingxiAHighTechDigitIcon} width={1506} height={844} sizes="100vw" alt="" src="/images/effe4ce64a17c2509f7644839f3f235a056b9e5a.png" unoptimized />
+          <Image className={styles.yidianlingxiAHighTechDigitIcon} width={1506} height={844} sizes="100vw" alt="" src="/images/yidianlingxi_A_high-tech_digital-style_Earth_its_surface_wrappe_fbe54872-2b5d-4087-a792-c36d2a472ef9 1.png" unoptimized />
         </div>
         <div className={styles.groupChild2} />
         <div className={styles.groupChild3} />
@@ -130,7 +130,68 @@ const HP:NextPage = () => {
       <div className={styles.icon2} />
       <div className={styles.icon3} />
       <div className={styles.hpInput}>Name</div>
-      <div className={styles.en}>EN</div>
+      <div className={styles.en}><div
+  style={{
+    position: "relative",
+    display: "inline-block",
+    fontFamily: "Arial, sans-serif"
+  }}
+>
+  <div
+    style={{
+      padding: "8px 14px",
+      border: "1px solid #ddd",
+      borderRadius: 6,
+      cursor: "pointer",
+      backgroundColor: "white",
+      fontWeight: 600,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      minWidth: 80
+    }}
+    onmouseover="this.nextElementSibling.style.display='block'"
+    onmouseout="this.nextElementSibling.style.display='none'"
+  >
+    EN ▼
+  </div>
+  <div
+    style={{
+      display: "none",
+      position: "absolute",
+      top: 40,
+      left: 0,
+      backgroundColor: "white",
+      border: "1px solid #ddd",
+      borderRadius: 6,
+      boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+      zIndex: 10,
+      minWidth: 100
+    }}
+    onmouseover="this.style.display='block'"
+    onmouseout="this.style.display='none'"
+  >
+    <div
+      style={{ padding: "8px 10px", cursor: "pointer" }}
+      onclick="selectLang(this)"
+    >
+      EN — English
+    </div>
+    <div
+      style={{ padding: "8px 10px", cursor: "pointer" }}
+      onclick="selectLang(this)"
+    >
+      HI — हिन्दी
+    </div>
+    <div
+      style={{ padding: "8px 10px", cursor: "pointer" }}
+      onclick="selectLang(this)"
+    >
+      FR — Français
+    </div>
+  </div>
+</div>
+</div>
       <div className={styles.contactUs}>CONTACT US</div>
       <div className={styles.regulatedByFsc}>Regulated BY FSC</div>
       <Image className={styles.vectorIcon} width={12} height={7.8} sizes="100vw" alt="" src="/images/blank.png" unoptimized />
@@ -490,8 +551,8 @@ const HP:NextPage = () => {
       <Image className={styles.groupOfBusinesspeopleAttendIcon} width={330} height={220} sizes="100vw" alt="" src="/images/99f43f1a23563d9510e22da95c8accd130149629.jpg" unoptimized />
       <Image className={styles.hpSpeakersAtABusinessSeminarIcon} width={330} height={220} sizes="100vw" alt="" src="/images/99f43f1a23563d9510e22da95c8accd130149629.jpg" unoptimized />
       <Image className={styles.speakersAtABusinessSeminarIcon2} width={330} height={220} sizes="100vw" alt="" src="/images/99f43f1a23563d9510e22da95c8accd130149629.jpg" unoptimized />
-      <Image className={styles.screenshot20250916At121} width={207} height={121.1} sizes="100vw" alt="" src="/images/blank.png" unoptimized />
-      <Image className={styles.hpChild35} width={189.7} height={95.7} sizes="100vw" alt="" src="/images/blank.png" unoptimized />
+      <Image className={styles.screenshot20250916At121} width={207} height={121.1} sizes="100vw" alt="" src="/images/trust.png" unoptimized />
+      <Image className={styles.hpChild35} width={189.7} height={95.7} sizes="100vw" alt="" src="/images/Group1597880916.png" unoptimized />
       <div className={styles.nexa45321FrontFacingUltraParent}>
         <Image className={styles.nexa45321FrontFacingUltraIcon} width={1078} height={1078} sizes="100vw" alt="" src="/images/Group1597880884.png" unoptimized />
         <div className={styles.groupChild14} />
