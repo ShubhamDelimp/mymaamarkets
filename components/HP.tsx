@@ -150,8 +150,8 @@ const HP:NextPage = () => {
       justifyContent: "space-between",
       minWidth: 80
     }}
-    onmouseover="this.nextElementSibling.style.display='block'"
-    onmouseout="this.nextElementSibling.style.display='none'"
+    // onmouseover="this.nextElementSibling.style.display='block'"
+    // onmouseout="this.nextElementSibling.style.display='none'"
   >
     EN ▼
   </div>
@@ -168,24 +168,24 @@ const HP:NextPage = () => {
       zIndex: 10,
       minWidth: 100
     }}
-    onmouseover="this.style.display='block'"
-    onmouseout="this.style.display='none'"
+    // onmouseover="this.style.display='block'"
+    // onmouseout="this.style.display='none'"
   >
     <div
       style={{ padding: "8px 10px", cursor: "pointer" }}
-      onclick="selectLang(this)"
+      // onclick="selectLang(this)"
     >
       EN — English
     </div>
     <div
       style={{ padding: "8px 10px", cursor: "pointer" }}
-      onclick="selectLang(this)"
+      // onclick="selectLang(this)"
     >
       HI — हिन्दी
     </div>
     <div
       style={{ padding: "8px 10px", cursor: "pointer" }}
-      onclick="selectLang(this)"
+      // onclick="selectLang(this)"
     >
       FR — Français
     </div>
