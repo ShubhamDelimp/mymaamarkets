@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     
     
-    <nav className={`w-full sticky top-0 z-50 ${styles.navbar} ${styles['navbar-bg']} shadow-lg`}>
+    <nav className={`w-full  z-50 ${styles.navbar} shadow-lg`}>
       <div className={`container-fluid mx-auto px-4 sm:px-6 lg:px-8`}>
         {/* Top Bar - Options & Contact */}
         <div className='hidden sm:flex items-center justify-between py-2 border-b border-[#006EFF]'>
