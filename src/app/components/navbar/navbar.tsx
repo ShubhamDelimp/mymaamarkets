@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
 
         {/* Main Bar - Logo, Menu, Login/Register */}
-        <div className='flex items-center justify-between py-4'>
+        <div className='flex items-center justify-between py-4 px-4'>
           <div className="logo flex-shrink-0">
             {/* Link to homepage using locale for consistency */}
             <Link href={`/${locale}`}>

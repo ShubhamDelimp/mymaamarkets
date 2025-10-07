@@ -1,26 +1,29 @@
 import Image from "next/image";
 import React from "react";
- 
+
 const HomeSectionSeven = () => {
   return (
-    <section className="relative w-full bg-white">
-      <div className="w-full mx-auto gap-x-20 px-6 flex flex-col lg:flex-row lg:items-center lg:justify-start space-y-12 lg:space-y-0 relative">
+    <section className="relative w-full bg-white overflow-hidden">
+      <div className="w-full mx-auto px-6 flex flex-col lg:flex-row lg:items-center lg:justify-start gap-y-12 lg:gap-x-20 relative">
+        
         {/* Left Content */}
-        <div className="lg:w-1/2  space-y-6 deposit-sec lg:pl-[200px] lg:pb-[230px]">
-          <h2 className="text-4xl font-semibold lg:text-start text-center">
-            <span className="text-[#006EFF] font-bold">Easy </span> <span className="text-[#0F3D62] font-medium">Deposits</span><br />
-            <span className="text-[#006EFF] font-bold">Quick</span> <span className="text-[#0F3D62] font-medium">Withdrawals</span>
+        <div className="lg:w-1/2 space-y-6 deposit-sec lg:pl-[200px] lg:pb-[230px] text-center lg:text-left">
+          <h2 className="text-3xl sm:text-4xl font-semibold leading-tight">
+            <span className="text-[#006EFF] font-bold">Easy </span>
+            <span className="text-[#0F3D62] font-medium">Deposits</span>
+            <br className="hidden sm:block" />
+            <span className="text-[#006EFF] font-bold">Quick </span>
+            <span className="text-[#0F3D62] font-medium">Withdrawals</span>
           </h2>
- 
-            <p className="text-gray-400 lg:max-w-lg lg:text-start text-center">
-              Fund your account with trusted methods. Fast processing, clear times,
-              and no hidden fees from MY MAA Markets.
-            </p>
-  
-            {/* Features grid */}
+
+          <p className="text-gray-400 max-w-xl mx-auto lg:mx-0">
+            Fund your account with trusted methods. Fast processing, clear times,
+            and no hidden fees from MY MAA Markets.
+          </p>
+
           {/* ✅ Mobile / Tablet Layout */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl w-full lg:hidden">
-            <div className="bg-white shadow-md rounded-xl p-4 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-md sm:max-w-2xl lg:hidden mx-auto">
+            <div className="bg-white shadow-md rounded-xl p-5 text-center">
               <h4 className="text-[#0F3D62] font-extrabold text-lg">
                 Trusted <br /> Methods
               </h4>
@@ -28,8 +31,8 @@ const HomeSectionSeven = () => {
                 Bank transfer, major cards, and popular e-wallets.
               </p>
             </div>
-          
-            <div className="bg-white shadow-md rounded-xl p-4 text-center">
+
+            <div className="bg-white shadow-md rounded-xl p-5 text-center">
               <h4 className="text-[#0F3D62] font-extrabold text-lg">
                 No <br /> surprises
               </h4>
@@ -37,8 +40,8 @@ const HomeSectionSeven = () => {
                 Clear processing times and no hidden platform fees from us.
               </p>
             </div>
-          
-            <div className="bg-white shadow-md rounded-xl p-4 text-center sm:col-span-2">
+
+            <div className="bg-white shadow-md rounded-xl p-5 text-center sm:col-span-2">
               <h4 className="text-[#0F3D62] font-extrabold text-lg">
                 Security <br /> First
               </h4>
@@ -47,8 +50,8 @@ const HomeSectionSeven = () => {
               </p>
             </div>
           </div>
-  
-          {/* ✅ Desktop Layout (previous design) */}
+
+          {/* ✅ Desktop Layout */}
           <div className="hidden lg:grid grid-cols-3 gap-8 max-w-3xl">
             <div>
               <h4 className="text-[#0F3D62] font-extrabold">
@@ -75,47 +78,48 @@ const HomeSectionSeven = () => {
               </p>
             </div>
           </div>
-  
-          <div className="flex justify-center items-center lg:items-start lg:justify-start">
-            <button className="bg-[#19C69A] hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-full max-w-max mt-6">
+
+          <div className="flex justify-center lg:justify-start">
+            <button className="bg-[#19C69A] hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-full mt-6">
               DEPOSIT NOW
             </button>
           </div>
-          <div className="mt-10 lg:absolute bottom-0 z-10">
+
+          <div className="hidden lg:block mt-10 lg:absolute bottom-0 z-10">
             <Image
               src="/images/phone_img.png"
               alt="Mobile App"
               width={890}
               height={602}
-              className=" mx-auto lg:mx-0"
+              className="mx-auto lg:mx-0 w-[90%] sm:w-[70%] lg:w-auto"
             />
           </div>
         </div>
- 
+
         {/* Right Content */}
-        <div className="lg:right-0 rounded-s-2xl lg:top-0 lg:h-full flex flex-col items-end relative">
-          {/* Payment logos */}
+        <div className="relative flex flex-col items-center lg:items-end lg:right-0">
           <Image
             src="/images/img-1.png"
             alt="Payment methods"
             width={960}
- height={905}
-            className="rounded-s-2xl"
+            height={905}
+            className="rounded-s-2xl w-full sm:w-[80%] lg:w-auto"
           />
- 
-          {/* Overlay 2-column grid */}
-         
- 
-          {/* Ratings */}
-          <div className="lg:bottom-30 mt-20 mb-[100px] flex items-center justify-center space-x-6 w-full">
-            <Image src="/images/rating.png" alt="Trustpilot" className="w-50"  width={800}
-                  height={900} />
+
+          <div className="mt-10 mb-16 flex flex-wrap justify-center items-center gap-4 lg:gap-6 w-full">
+            <Image
+              src="/images/rating.png"
+              alt="Trustpilot"
+              width={160}
+              height={40}
+              className="w-[120px] sm:w-[160px]"
+            />
             <Image
               src="/images/yellow_rating.png"
               alt="Rating"
-              className="w-40"
-                                    width={800}
-                height={900}
+              width={140}
+              height={40}
+              className="w-[100px] sm:w-[140px]"
             />
           </div>
         </div>
@@ -123,7 +127,5 @@ const HomeSectionSeven = () => {
     </section>
   );
 };
- 
+
 export default HomeSectionSeven;
- 
- 
