@@ -153,8 +153,8 @@ span {
 }
 
 
-.navbar-module__W78IAW__navbar {
-    background: #081b31 !important;
+.navbar_navbar__GSgRc {
+    background: #021b31;
 }
 h1.home-module__aUD9Yq__heroTitle {
     font-weight: 500;
@@ -410,4 +410,5 @@ p.text-5xl.md\:text-6xl.lg\:text-7xl.font-extrabold.text-white.leading-none {
         flex-direction: column;
         gap: 20px;
     }
+
 }
