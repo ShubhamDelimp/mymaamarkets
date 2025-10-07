@@ -1,0 +1,55 @@
+
+.navbar {
+    color: #ffffff; 
+    text-transform: uppercase;
+}
+
+.navbar-bg {
+    background-color: #1f2937; 
+}
+
+.link {
+    font-size: 0.75rem; 
+    letter-spacing: 0.05em; 
+    font-weight: 500;
+}
+
+
+.mobileLink {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    display: block;
+    color: #f3f4f6; 
+    transition: color 0.3s;
+}
+
+.mobileLink:hover {
+    color: #22d3ee; 
+}
+
+
+.menuList {
+    display: flex;
+    gap: 1.5rem; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.select {
+    color: #22d3ee; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (max-width: 639px) {
+    .navbar .logo img {
+        height: 1.75rem; 
+        width: auto;
+    }
+}

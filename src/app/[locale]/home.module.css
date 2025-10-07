@@ -1,0 +1,375 @@
+/* .herosection{
+    position: relative;
+}
+.herosection .trading_mobile{
+    position: absolute;
+    right:10%;
+    top:50%;
+    transform: translateX(-10%) translateY(-50%);
+    z-index: -1;
+  
+}
+.hero_bg_1{
+position: absolute;
+top: 25%;
+left:50%;
+transform: translate(-50%,-25%);
+width: 50%;
+height: auto;
+z-index: -2;
+}
+.hero_bg_2{
+position: absolute;
+top: 75%;
+left:75%;
+transform: translate(-75%,-75%);
+width: 50%;
+height: auto;
+z-index: -2;
+}
+.heroimage{
+    width: 100%;
+    height: auto;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} */
+
+.herosection {
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Background globe wrapper */
+
+.bgWrap {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+}
+
+.bgImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* show globe mostly on the right side like the screenshot */
+    object-position: right center;
+    filter: saturate(1) contrast(1);
+    opacity: 1;
+}
+
+
+/* top row layout: two columns but second column is the globe background */
+
+.topRow {
+    display: grid;
+    grid-template-columns: 1fr 460px;
+    /* left column flexible, right column reserved to keep spacing */
+    gap: 2rem;
+    align-items: center;
+    min-height: 60vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* left content block */
+
+.leftContent {
+    max-width: 720px;
+    z-index: 2;
+}
+
+
+/* heading: keep first word normal, rest gradient */
+
+.heroTitle {
+    font-size: 2.4rem;
+    /* mobile */
+    line-height: 1.02;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+    .heroTitle {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heroTitle {
+        font-size: 4rem;
+    }
+}
+
+.headingFirst {
+    color: #fff;
+}
+
+.headingRest {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Outfit';
+}
+
+
+/* small dotted decorative line (to the right of heading) */
+
+.dottedLine {
+    width: 260px;
+    height: 2px;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.18);
+    margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+
+/* description */
+
+.description {
+    color: rgba(255, 255, 255, 0.82);
+    margin-top: 1rem;
+    max-width: 620px;
+}
+
+
+/* CTA buttons */
+
+.openBtn {
+    background: linear-gradient(90deg, #00c48f, #1bbf8a);
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(12, 128, 94, 0.18);
+    cursor: pointer;
+}
+
+.openBtn:hover {
+    /* Modify the gradient on hover */
+    background: linear-gradient(90deg, #0ca776, #0ca776);
+}
+
+.demoLink {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+
+/* right spacer (empty, the globe bg fills area) */
+
+.rightSpacer {
+    height: 60vh;
+}
+
+
+/* bottom strip anchored inside container but visually lower */
+
+.bottomStrip {
+    position: relative;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 3;
+    /* keep it lower to sit near section bottom */
+    margin-bottom: 1rem;
+    width: 100%;
+    /* margin-top: 150px; */
+}
+
+
+/* features */
+
+.features {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(39, 32, 92, 0.15);
+    padding: 2px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.06);
+    width: 100%;
+}
+
+.featureItem {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-align: left;
+}
+
+.featureTitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.featureValue {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+    background: #38e3ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* widgets + register group (right side) */
+
+.widgetsGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.cards {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    width: 180px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(2, 10, 20, 0.25);
+}
+
+
+/* register button near cards */
+
+.registerBtn {
+    background: linear-gradient(90deg, #00c48f, #1bbf8a);
+    padding: 10px 20px;
+    border-radius: 999px;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 8px 22px rgba(12, 128, 94, 0.18);
+}
+
+
+/* RESPONSIVE rules */
+
+@media (max-width: 1024px) {
+    .topRow {
+        grid-template-columns: 1fr 260px;
+    }
+    .dottedLine {
+        width: 160px;
+    }
+    .rightSpacer {
+        display: block;
+        height: 40vh;
+    }
+    .card {
+        width: 150px;
+        height: 60px;
+    }
+    .bottomStrip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        z-index: 3;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    /* features */
+    .features {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+        background: none;
+        padding: 2px 20px;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+    }
+    .featureItem {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .featureTitle {
+        font-size: 1rem;
+        margin: 0;
+        margin-right: 0px;
+    }
+    .widgetsGroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .registerBtn {
+        background: linear-gradient(90deg, #00c48f, #1bbf8a);
+        padding: 10px 20px;
+        border-radius: 999px;
+        color: white;
+        font-weight: 800;
+        box-shadow: 0 8px 22px rgba(12, 128, 94, 0.18);
+    }
+}
+
+@media (max-width: 768px) {
+    .topRow {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .leftContent {
+        margin: 0 auto;
+    }
+    .rightSpacer {
+        display: none;
+    }
+    .dottedLine {
+        display: none;
+    }
+    .bottomStrip {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    .features {
+        justify-content: center;
+    }
+    .widgetsGroup {
+        flex-direction: column;
+    }
+    .registerBtn {
+        margin-top: 6px;
+        width: 80%;
+    }
+    .bgImage {
+        object-fit: contain;
+        /* Keeps the aspect ratio intact and prevents stretching */
+    }
+}
