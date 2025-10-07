@@ -112,7 +112,9 @@ span {
     color: var(--text-color);
     border: 1px solid var(--text-color)
 }
-
+.our--result {
+    font-size: clamp(20px, 4vw, 60px);
+}
 .gradient-border {
     position: relative;
     padding: 2px;

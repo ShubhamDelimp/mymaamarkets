@@ -41,7 +41,7 @@ const HomeSectionTen = () => {
             {/* Background Decorative Elements */}
            
             <div className="container mx-auto relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start py-20">
                     <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:sticky lg:top-8">
                         <div>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 mb-2">

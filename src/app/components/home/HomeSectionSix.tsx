@@ -14,7 +14,7 @@ const events = [
  
 const HomeSectionSix = () => {
   return (
-    <div className="w-full flex justify-center pb-16 px-4 bg-white">
+    <div className="w-full flex justify-center pb-16 px-4 bg-white hidden">
       <div className="relative w-full flex flex-col gap-8">
         {/* First Row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">

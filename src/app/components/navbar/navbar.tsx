@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     
     
-    <nav className={`w-full  z-50 ${styles.navbar} shadow-lg`}>
+    <nav className={`w-full  z-50 ${styles.navbar} shadow-lg bg-[#021b31]`}>
       <div className={`container-fluid mx-auto px-4 sm:px-6 lg:px-8`}>
         {/* Top Bar - Options & Contact */}
         <div className='hidden sm:flex items-center justify-between py-2 border-b border-[#006EFF]'>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link href={`/${locale}/contact`} className={`${styles.link} hover:text-cyan-400 transition duration-300`}>
               CONTACT US
             </Link>
-            <LocaleSwitcher />
+            
           </div>
         </div>
 
@@ -100,7 +100,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Content (Conditional Rendering) */}
-      <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute w-full bg-gray-900/95 shadow-xl transition-all duration-300 ease-in-out`}>
+      <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute w-full bg-gray-900/95 shadow-xl transition-all duration-300 ease-in-out z-5`}>
         <ul className='flex flex-col space-y-2 p-4'>
           {/* Top Bar items on mobile */}
           <li className='sm:hidden pt-2 border-t border-gray-700'><Link href={`/${locale}/partnership`} onClick={toggleMenu} className={`${styles.mobileLink}`}>PARTNERSHIP</Link></li>
