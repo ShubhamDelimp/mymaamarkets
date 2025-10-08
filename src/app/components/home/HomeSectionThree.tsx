@@ -138,7 +138,7 @@ const HomeSectionThree = () => {
                  Low <span className="font-medium">Spreads <br /> & </span>   Zero <span className="font-medium">Commissions</span>
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
-                  This is a static description for the feature block. It doesn't change and is hardcoded.
+                  This is a static description for the feature block. It doesn&apos;t change and is hardcoded.
                 </p>
                 
                  </div>
@@ -196,3 +196,4 @@ const HomeSectionThree = () => {
 };
 
 export default HomeSectionThree;
+
