@@ -6,9 +6,9 @@ export default function HomeSectionTwo() {
       <div className="xl:max-w-7xl w-full mx-auto flex flex-col lg:flex-row items-start gap-10">
         {/* LEFT TEXT CONTENT */}
         <div className="flex flex-col justify-center items-center text-center lg:justify-start lg:items-start lg:text-start w-full lg:w-[45%]">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight text-[#0F3D62] mb-3 common-heading">
             Invest in the <br />
-            <span className="text-blue-600">Best Performing</span>
+            <span className="text-blue-600 font-extrabold">Best Performing</span>
             <br /> Markets
           </h2>
           <p className="mt-3 sm:mt-5 text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">

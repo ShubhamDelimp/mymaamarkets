@@ -20,12 +20,9 @@ const HomeSectionFour = () => {
         {/* Content */}
         <div className="relative z-10 py-8 md:py-16 px-6 md:px-12 lg:px-16 text-white text-center">
           {/* Headings */}
-          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[60px] font-extrabold mb-0 leading-snug">
-            Our Results Are Proven
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[50px] font-medium mb-0 leading-snug leading-[20px] mb-[25px] common-heading">
+            Our <span className='font-extrabold'>Results</span> Are Proven <br /> in Numbers
           </h2>
-          <p className="text-xl sm:text-2xl md:text-4xl lg:text-[60px] font-extrabold lg:mb-10 mb-6 leading-snug">
-            in Numbers
-          </p>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 md:gap-x-6">

@@ -14,7 +14,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
                 onClick={onClick}
             >
                 <span
-                    className={`text-lg font-semibold ${isOpen ? 'text-gray-900' : 'text-gray-800'
+                    className={`text-xl font-semibold ${isOpen ? 'text-[#0F3D62]' : 'text-[#0F3D62]'
                         }`}
                 >
                     {title}
@@ -53,14 +53,9 @@ export default function FAQSection() {
             content: (
                 <>
                     <p className="mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
+                        Trading is the act of buying and selling goods, services, or financial assets (like stocks, currencies, or commodities) to make a profit.</p>
+                    <p>In finance, trading usually refers to the exchange of financial instruments — such as stocks, bonds, forex, or cryptocurrencies — where traders aim to earn money from changes in their prices.
+                    
                     </p>
                 </>
             ),
@@ -81,15 +76,14 @@ export default function FAQSection() {
         <section className="py-16 bg-white">
             <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
                
-                <div className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
-                        Frequently
-                    </h2>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-600 mb-6 leading-tight">
-                        Asked Questions
+                <div className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
+                    <h2 className="text-3xl sm:text-4xl font-medium text-[#0F3D62] leading-tight common-heading">
+                        Frequently <br /> <span className="font-extrabold text-[#006EFF]"> Asked </span> <br />
+                        Questions
                     </h2>
  
-                    <p className="text-base sm:text-lg text-gray-700 mb-4 max-w-sm">
+                    <div className='mt-auto'>
+                        <p className="text-base sm:text-lg text-[#0F3D62] font-semibold mb-4 max-w-sm">
                         Can't Find What You Are Looking For?
                     </p>
  
@@ -99,6 +93,7 @@ export default function FAQSection() {
                     >
                         Get in Touch
                     </a>
+                    </div>
                 </div>
  
  

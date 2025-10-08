@@ -7,13 +7,13 @@ const HomeSectionSeven = () => {
       <div className="w-full mx-auto px-6 flex flex-col lg:flex-row lg:items-center lg:justify-start gap-y-12 lg:gap-x-20 relative">
         
         {/* Left Content */}
-        <div className="lg:w-1/2 space-y-6 deposit-sec lg:pl-[200px] lg:pb-[230px] text-center lg:text-left">
-          <h2 className="text-3xl sm:text-4xl font-semibold leading-tight">
-            <span className="text-[#006EFF] font-bold">Easy </span>
-            <span className="text-[#0F3D62] font-medium">Deposits</span>
+        <div className="lg:w-1/2 space-y-6 lg:pl-[200px] lg:pb-[230px] text-center lg:text-left">
+          <h2 className="text-3xl sm:text-4xl leading-tight common-heading">
+            <span className="text-[#006EFF] font-bold"> Easy </span>
+            <span className="text-[#0F3D62] font-medium"> Deposits</span>
             <br className="hidden sm:block" />
-            <span className="text-[#006EFF] font-bold">Quick </span>
-            <span className="text-[#0F3D62] font-medium">Withdrawals</span>
+            <span className="text-[#006EFF] font-bold"> Quick </span>
+            <span className="text-[#0F3D62] font-medium"> Withdrawals </span>
           </h2>
 
           <p className="text-gray-400 max-w-xl mx-auto lg:mx-0">
@@ -24,7 +24,7 @@ const HomeSectionSeven = () => {
           {/* ✅ Mobile / Tablet Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-md sm:max-w-2xl lg:hidden mx-auto">
             <div className="bg-white shadow-md rounded-xl p-5 text-center">
-              <h4 className="text-[#0F3D62] font-extrabold text-lg">
+              <h4 className="text-[#0F3D62] font-bold text-lg">
                 Trusted <br /> Methods
               </h4>
               <p className="text-gray-400 text-sm mt-2">
@@ -33,7 +33,7 @@ const HomeSectionSeven = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-xl p-5 text-center">
-              <h4 className="text-[#0F3D62] font-extrabold text-lg">
+              <h4 className="text-[#0F3D62] font-bold text-lg">
                 No <br /> surprises
               </h4>
               <p className="text-gray-400 text-sm mt-2">
@@ -42,7 +42,7 @@ const HomeSectionSeven = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-xl p-5 text-center sm:col-span-2">
-              <h4 className="text-[#0F3D62] font-extrabold text-lg">
+              <h4 className="text-[#0F3D62] font-bold text-lg">
                 Security <br /> First
               </h4>
               <p className="text-gray-400 text-sm mt-2">
@@ -54,7 +54,7 @@ const HomeSectionSeven = () => {
           {/* ✅ Desktop Layout */}
           <div className="hidden lg:grid grid-cols-3 gap-8 max-w-3xl">
             <div>
-              <h4 className="text-[#0F3D62] font-extrabold">
+              <h4 className="text-[#0F3D62] font-bold mb-[10px]">
                 Trusted <br /> Methods
               </h4>
               <p className="text-gray-400 text-sm">
@@ -62,7 +62,7 @@ const HomeSectionSeven = () => {
               </p>
             </div>
             <div>
-              <h4 className="text-[#0F3D62] font-extrabold">
+              <h4 className="text-[#0F3D62] font-bold mb-[10px]">
                 No <br /> surprises
               </h4>
               <p className="text-gray-400 text-sm">
@@ -70,7 +70,7 @@ const HomeSectionSeven = () => {
               </p>
             </div>
             <div>
-              <h4 className="text-[#0F3D62] font-extrabold">
+              <h4 className="text-[#0F3D62] font-bold mb-[10px]">
                 Security <br /> First
               </h4>
               <p className="text-gray-400 text-sm">

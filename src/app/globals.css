@@ -1,416 +1,424 @@
-@import "tailwindcss";
-:root {
-    --bg-color: #01050B;
-    --text-color: #ffffff;
-    --primary-color: #0474F1;
-    --secondary-color: #5CE9FF;
-    --blue-1: #5CE9FF;
-    --font-inter: 'poppins', sans-serif;
-    /* Define Inter font variable */
-    --font-outfit: 'Outfit', sans-serif;
-}
-
-.light {
-    --bg-color: #ffffff;
-    --text-color: #111111;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: -2px;
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    letter-spacing: -2px;
-}
-
-h3 {
-    font-size: 2.75rem;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.75rem;
-}
-
-h6 {
-    font-size: 1.5rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-outfit);
-}
-
-p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: -1px;
-    line-height: 150%;
-    font-family: 'Inter', sans-serif;
-}
-
-span {
-    font-family: 'Inter', sans-serif;
-}
-
-.available-on p {
-    margin-bottom: 25px;
-}
-
-.available-on p span {
-    font-size: 22px;
-    color: #0F3D62;
-    font-weight: 500;
-}
-
-.available-on p img {
-    width: 35px;
-    height: 35px;
-}
-
-.text-gradient-1 {
-    background: linear-gradient(to top, var(--primary-color) 20%, var(--blue-1) 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* For Firefox */
-    background-clip: text;
-    color: transparent;
-}
-
-.btn-gradient-1 {
-    background: linear-gradient(to top, #0474F1 45%, #37B7F9 80%);
-    padding: 0.5rem 3rem;
-    border-radius: 9999px;
-    font-weight: 500;
-}
-
-.btn-outline {
-    background: transparent;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-weight: 500;
-    color: var(--text-color);
-    border: 1px solid var(--text-color)
-}
-.our--result {
-    font-size: clamp(20px, 4vw, 60px);
-}
-.gradient-border {
-    position: relative;
-    padding: 2px;
-    /* Border thickness */
-    border-radius: 0.5rem;
-    background: linear-gradient(270deg, var(--blue-1), var(--primary-color), var(--blue-1));
-    background-size: 200% 200%;
-    animation: gradient-travel 2s linear infinite;
-    transition: all 0.4s;
-}
-
-@keyframes gradient-travel {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.gradient-border>.inner {
-    background-color: var(--bg-color);
-    border-radius: 0.5rem;
-    height: 100%;
-    width: 100%;
-    transition: all 0.4s;
-}
-
-.gradient-border:hover {
-    box-shadow: 0px 0px 25px 2px var(--primary-color);
-}
-
-.home-module__aUD9Yq__herosection {
-    background: #021B31;
-}
-
-
-.navbar_navbar__GSgRc {
-    background: #021b31;
-}
-h1.home-module__aUD9Yq__heroTitle {
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 1.2;
-}
-
-.navbar-module__W78IAW__link {
-    letter-spacing: .03em;
-    font-size: 16px !important;
-    font-weight: 300;
-}
-
-.navbar-module__W78IAW__select {
-    font-weight: 500;
-    padding: 8px 20px;
-    font-size: 16px;
-}
-
-select.text-base {
-    text-transform: uppercase;
-}
-
-button.btn-outline {
-    width: 113px;
-    height: 53px;
-    border-radius: 30px;
-    font-size: 16px;
-}
-
-.container-fluid {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.container {
-    max-width: 1420px;
-    margin: 0 auto;
-}
-
-button.home-module__aUD9Yq__openBtn {
-    width: 257px;
-    height: 57px;
-    text-transform: uppercase;
-}
-
-h1.home-module__aUD9Yq__heroTitle {
-    padding-bottom: 4rem;
-}
-
-.home-module__aUD9Yq__features {
-    background: rgb(39 32 92 / 4%);
-}
-
-h3.home-module__aUD9Yq__featureValue {
-    font-size: 60px;
-}
-
-p.home-module__aUD9Yq__featureTitle {
-    font-size: 20px;
-}
-
-.home-module__aUD9Yq__featureItem {
-    gap: 60px;
-}
-
-button.text-center.mt-8.px-6.py-3.bg-\[\#1bbf8a\].text-white.text-sm.font-semibold.rounded-full.shadow.hover\:bg-green-600.transition.uppercase.cursor-pointer {
-    width: 257px;
-    height: 53px;
-    font-size: 18px;
-}
-
-h2.text-5xl.font-extrabold.leading-tight.text-gray-900.text-center.lg\:text-start {
-    font-size: 60px;
-}
-
-.grid.grid-cols-2.lg\:grid-cols-3.gap-3.text-black {
-    width: 1200px;
-    margin-left: -370px;
-}
-
-.grid.grid-cols-2.lg\:grid-cols-3.gap-3.text-black {
-    width: 1200px;
-    margin-left: -370px;
-}
-
-.relative.z-10.py-8.lg\:py-16.px-8.md\:px-12.lg\:px-16.text-white.text-center {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 0;
-}
-
-h2.text-3xl.md\:text-4xl.lg\:text-5xl.font-extrabold.mb-0.leading-snug {
-    font-size: 50px;
-}
-
-p.text-5xl.md\:text-6xl.lg\:text-7xl.font-extrabold.text-white.leading-none {
-    font-size: 60px;
-    font-family: 'Outfit';
-}
-
-.meta-trade-head {
-    font-weight: 500 !important;
-}
-
-.tading-mobile-app {
-    font-size: 30px;
-    font-weight: 700;
-    color: #0F3D62;
-    font-family: 'Outfit';
-}
-
-.tading-mobile-app-p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #0F3D62;
-    font-family: 'Inter';
-    margin-bottom: 25px;
-}
-
-.deposit-sec h2 span {
-    font-size: 60px;
-}
-
-.deposit-sec h2 span {
-    font-family: 'Outfit' !important;
-}
-
-@media screen and (max-width:1600px) {
-    h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
-        letter-spacing: -2px;
-    }
-    h2 {
-        font-size: 3rem;
-        font-weight: 800;
-        letter-spacing: -2px;
-    }
-    h3 {
-        font-size: 2rem;
-        font-weight: 600;
-        letter-spacing: -1.5px;
-    }
-    h4 {
-        font-size: 1.2rem;
-    }
-    h5 {
-        font-size: 1.5rem;
-    }
-    h6 {
-        font-size: 1.25rem;
-    }
-    p {
-        font-size: 1rem;
-        line-height: 150%;
-        letter-spacing: normal;
-    }
-    small {
-        font-size: 0.75rem;
-    }
-    .broker {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    h4 {
-        font-size: 1rem;
-    }
-    h3 {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    body {
-        font-size: 14px;
-    }
-    .broker {
-        font-size: 8px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .footer-sec {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-form {
-        margin-top: 30px;
-    }
-}
-
-.tech-slideshow {
-    width: 100%;
-    overflow: hidden;
-}
-
-.tech-slideshow .mover-1 {
-    display: flex;
-    animation: moveSlideshow 20s linear infinite;
-}
-
-@keyframes moveSlideshow {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.tradingview-widget-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
-    margin: 10px 0;
-}
-
-
-/* .tradingview-widget-container {
+                            @import "tailwindcss";
+                             :root {
+                                --bg-color: #01050B;
+                                --text-color: #ffffff;
+                                --primary-color: #0474F1;
+                                --secondary-color: #5CE9FF;
+                                --blue-1: #5CE9FF;
+                                --font-inter: 'poppins', sans-serif;
+                                /* Define Inter font variable */
+                                --font-outfit: 'Outfit', sans-serif;
+                            }
+                            
+                            .light {
+                                --bg-color: #ffffff;
+                                --text-color: #111111;
+                            }
+                            
+                            body {
+                                background-color: var(--bg-color);
+                                color: var(--text-color);
+                                font-family: Inter, sans-serif;
+                                font-size: 16px;
+                            }
+                            
+                            h1 {
+                                font-size: 4rem;
+                                letter-spacing: -2px;
+                            }
+                            
+                            h1 span {
+                                font-family: 'Outfit';
+                            }
+                            
+                            h2 span {
+                                font-family: 'Outfit';
+                            }
+                            
+                            h2 {
+                                font-size: 3rem;
+                                letter-spacing: -2px;
+                            }
+                            
+                            h3 {
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                                letter-spacing: -1.5px;
+                            }
+                            
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+                            
+                            h5 {
+                                font-size: 1.75rem;
+                            }
+                            
+                            h6 {
+                                font-size: 1.5rem;
+                            }
+                            
+                            .common-heading {
+                                font-size: clamp(35px, 3vw, 60px);
+                                /* font-weight: 600; */
+                            }
+                            
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            h5,
+                            h6 {
+                                font-family: 'Outfit';
+                                line-height: 1.75rem;
+                                letter-spacing: -1px;
+                                line-height: 125%;
+                            }
+                            
+                            span {
+                                font-family: 'Inter', sans-serif;
+                            }
+                            
+                            .available-on p {
+                                margin-bottom: 25px;
+                            }
+                            
+                            .bull-img {
+                                position: absolute;
+                                right: 136px;
+                                overflow: hidden;
+                                width: 35%;
+                                top: -399px;
+                            }
+                            
+                            .available-on p span {
+                                font-size: 22px;
+                                color: #0F3D62;
+                                font-weight: 500;
+                            }
+                            
+                            .available-on p img {
+                                width: 35px;
+                                height: 35px;
+                            }
+                            
+                            .text-gradient-1 {
+                                background: linear-gradient(to top, var(--primary-color) 20%, var(--blue-1) 80%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                /* For Firefox */
+                                background-clip: text;
+                                color: transparent;
+                            }
+                            
+                            .btn-gradient-1 {
+                                background: linear-gradient(to top, #0474F1 45%, #37B7F9 80%);
+                                padding: 0.5rem 3rem;
+                                border-radius: 9999px;
+                                font-weight: 500;
+                            }
+                            
+                            .btn-outline {
+                                background: transparent;
+                                padding: 0.5rem 1rem;
+                                border-radius: 9999px;
+                                font-weight: 500;
+                                color: var(--text-color);
+                                border: 1px solid var(--text-color)
+                            }
+                            
+                            .our--result {
+                                font-size: clamp(20px, 4vw, 60px);
+                            }
+                            
+                            .gradient-border {
+                                position: relative;
+                                padding: 2px;
+                                /* Border thickness */
+                                border-radius: 0.5rem;
+                                background: linear-gradient(270deg, var(--blue-1), var(--primary-color), var(--blue-1));
+                                background-size: 200% 200%;
+                                animation: gradient-travel 2s linear infinite;
+                                transition: all 0.4s;
+                            }
+                            
+                            @keyframes gradient-travel {
+                                0% {
+                                    background-position: 0% 50%;
+                                }
+                                50% {
+                                    background-position: 100% 50%;
+                                }
+                                100% {
+                                    background-position: 0% 50%;
+                                }
+                            }
+                            
+                            .gradient-border>.inner {
+                                background-color: var(--bg-color);
+                                border-radius: 0.5rem;
+                                height: 100%;
+                                width: 100%;
+                                transition: all 0.4s;
+                            }
+                            
+                            .gradient-border:hover {
+                                box-shadow: 0px 0px 25px 2px var(--primary-color);
+                            }
+                            
+                            .home-module__aUD9Yq__herosection {
+                                background: #021B31;
+                            }
+                            
+                            .navbar_navbar__GSgRc {
+                                background: #021b31;
+                            }
+                            
+                            h1.home-module__aUD9Yq__heroTitle {
+                                font-weight: 500;
+                                /* font-size: 60px; */
+                                line-height: 1.2;
+                            }
+                            
+                            .navbar-module__W78IAW__link {
+                                letter-spacing: .03em;
+                                font-size: 16px !important;
+                                font-weight: 300;
+                            }
+                            
+                            .navbar-module__W78IAW__select {
+                                font-weight: 500;
+                                padding: 8px 20px;
+                                font-size: 16px;
+                            }
+                            
+                            select.text-base {
+                                text-transform: uppercase;
+                            }
+                            
+                            button.btn-outline {
+                                width: 113px;
+                                height: 53px;
+                                border-radius: 30px;
+                                font-size: 16px;
+                            }
+                            
+                            .container-fluid {
+                                max-width: 1600px;
+                                margin: 0 auto;
+                                padding: 0;
+                            }
+                            
+                            .container {
+                                max-width: 1420px;
+                                margin: 0 auto;
+                            }
+                            
+                            button.home-module__aUD9Yq__openBtn {
+                                width: 257px;
+                                height: 57px;
+                                text-transform: uppercase;
+                            }
+                            
+                            h1.home-module__aUD9Yq__heroTitle {
+                                padding-bottom: 4rem;
+                            }
+                            
+                            .home-module__aUD9Yq__features {
+                                background: rgb(39 32 92 / 4%);
+                            }
+                            
+                            h3.home-module__aUD9Yq__featureValue {
+                                font-size: clamp(35px, 3vw, 60px);
+                            }
+                            
+                            p.home-module__aUD9Yq__featureTitle {
+                                font-size: 20px;
+                            }
+                            
+                            .home-module__aUD9Yq__featureItem {
+                                gap: 45px;
+                            }
+                            
+                            button.text-center.mt-8.px-6.py-3.bg-\[\#1bbf8a\].text-white.text-sm.font-semibold.rounded-full.shadow.hover\:bg-green-600.transition.uppercase.cursor-pointer {
+                                width: 257px;
+                                height: 53px;
+                                font-size: 18px;
+                            }
+                            
+                            h2.text-5xl.font-extrabold.leading-tight.text-gray-900.text-center.lg\:text-start {
+                                font-size: 60px;
+                            }
+                            
+                            .grid.grid-cols-2.lg\:grid-cols-3.gap-3.text-black {
+                                width: 1200px;
+                                margin-left: -370px;
+                            }
+                            
+                            .grid.grid-cols-2.lg\:grid-cols-3.gap-3.text-black {
+                                width: 1200px;
+                                margin-left: -370px;
+                            }
+                            
+                            .relative.z-10.py-8.lg\:py-16.px-8.md\:px-12.lg\:px-16.text-white.text-center {
+                                height: 500px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                margin: auto;
+                                padding: 0;
+                            }
+                            
+                            h2.text-3xl.md\:text-4xl.lg\:text-5xl.font-extrabold.mb-0.leading-snug {
+                                font-size: 50px;
+                            }
+                            
+                            p.text-5xl.md\:text-6xl.lg\:text-7xl.font-extrabold.text-white.leading-none {
+                                font-size: 60px;
+                                font-family: 'Outfit';
+                            }
+                            
+                            .meta-trade-head {
+                                font-weight: 500 !important;
+                            }
+                            
+                            .tading-mobile-app {
+                                font-size: clamp(20px, 3vw, 30px);
+                                font-weight: 700;
+                                color: #0F3D62;
+                                font-family: 'Outfit';
+                            }
+                            
+                            .tading-mobile-app-p {
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #0F3D62;
+                                font-family: 'Inter';
+                                margin-bottom: 25px;
+                            }
+                            
+                            .deposit-sec h2 span {
+                                font-size: 60px;
+                            }
+                            
+                            .deposit-sec h2 span {
+                                font-family: 'Outfit' !important;
+                            }
+                            
+                            @media screen and (max-width:1600px) {
+                                h1 {
+                                    font-size: 3.5rem;
+                                    letter-spacing: -2px;
+                                }
+                                h2 {
+                                    font-size: 3rem;
+                                    letter-spacing: -2px;
+                                }
+                                h3 {
+                                    font-size: 2rem;
+                                    letter-spacing: -1.5px;
+                                }
+                                h4 {
+                                    font-size: 1.2rem;
+                                }
+                                h5 {
+                                    font-size: 1.5rem;
+                                }
+                                h6 {
+                                    font-size: 1.25rem;
+                                }
+                                p {
+                                    font-size: 1rem;
+                                    line-height: 150%;
+                                    letter-spacing: normal;
+                                }
+                                small {
+                                    font-size: 0.75rem;
+                                }
+                                .broker {
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 768px) {
+                                body {
+                                    font-size: 14px;
+                                }
+                                h4 {
+                                    font-size: 1rem;
+                                }
+                                h3 {
+                                    font-size: 1rem;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 640px) {
+                                body {
+                                    font-size: 14px;
+                                }
+                                .broker {
+                                    font-size: 8px;
+                                }
+                            }
+                            
+                            @media screen and (min-width: 1024px) and (max-width: 1440px) {
+                                .footer-sec {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .footer-form {
+                                    margin-top: 30px;
+                                }
+                            }
+                            
+                            .tech-slideshow {
+                                width: 100%;
+                                overflow: hidden;
+                            }
+                            
+                            .tech-slideshow .mover-1 {
+                                display: flex;
+                                animation: moveSlideshow 20s linear infinite;
+                            }
+                            
+                            @keyframes moveSlideshow {
+                                0% {
+                                    transform: translateX(0);
+                                }
+                                100% {
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            
+                            .tradingview-widget-container {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                gap: 15px;
+                                margin: 10px 0;
+                            }
+                            /* .tradingview-widget-container {
     background-color: white !important;
     padding: 0;
     margin: 0;
     border: none;
 } */
-
-.tv-embed-widget-wrapper {
-    background-color: white !important;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-
-/* .tradingview-widget-container__widget {
+                            
+                            .tv-embed-widget-wrapper {
+                                background-color: white !important;
+                                padding: 0;
+                                margin: 0;
+                                border: none;
+                            }
+                            /* .tradingview-widget-container__widget {
     background-color: white !important;
 } */
-
-@media (max-width: 768px) {
-    .tradingview-widget-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-}
+                            
+                            @media (max-width: 768px) {
+                                .tradingview-widget-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                }
+                            }

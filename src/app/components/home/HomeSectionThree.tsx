@@ -9,23 +9,44 @@ interface FeatureBlockProps {
   description: string;
 }
 
-const FeatureBlock: React.FC<FeatureBlockProps> = ({ title, description }) => {
-  return (
-    <div className="flex flex-col h-full">
-      <div>
-        <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
-          {title}
-        </h3>
-        <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
-          {description}
-        </p>
-      </div>
-      <div className="text-right mt-auto">
-        <LearnMoreButton />
-      </div>
-    </div>
-  );
-};
+// const FeatureBlock: React.FC<FeatureBlockProps> = ({ title, description }) => {
+//   return (
+//     <div className="flex flex-col h-full">
+//       <div>
+//         <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+//           {title}
+//         </h3>
+//         <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+//           {description}
+//         </p>
+//       </div>
+//       <div className="text-right mt-auto">
+//         <LearnMoreButton />
+//       </div>
+//     </div>
+//   );
+// };
+
+// const FeatureBlock: React.FC = () => {
+//   return (
+//     <div className="flex flex-col h-full">
+//       <div>
+//         <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+//           Static Feature Title
+//         </h3>
+//         <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+//           This is a static description for the feature block. It doesn't change and is hardcoded.
+//         </p>
+        
+//         <div className="text-right mt-auto">
+//           <LearnMoreButton />
+//         </div>
+//       </div>
+      
+//     </div>
+//   );
+// };
+
 
 const HomeSectionThree = () => {
   return (
@@ -33,27 +54,39 @@ const HomeSectionThree = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
         
         {/* LEFT SIDE IMAGE */}
-        <div className="flex justify-center lg:justify-start">
-          <div
-            className="relative w-[260px] sm:w-[350px] md:w-[450px] lg:w-[600px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden rounded-[28px]"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(244,246,248,1) 0%, rgba(0,0,0,0) 50%)",
-            }}
-          >
-            <Image
-              src="/images/section3.png"
-              alt="iPhone showing trading application"
-              fill
-              className="object-contain z-10"
-              priority
-            />
-          </div>
-        </div>
+        <div className="flex justify-center lg:justify-start relative">
+  {/* Background image layer */}
+  <div className="absolute sm:top-[-120px] top-[-70px] left-1/2 -translate-x-1/2 z-0 w-[300px] sm:w-[350px] md:w-[450px] lg:w-[600px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
+    <Image
+      src="/images/Rectangle-gray.png"
+      alt="Background shape"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+
+  {/* Main phone image container */}
+  <div
+    className="relative z-10 w-[260px] sm:w-[350px] md:w-[450px] lg:w-[600px] h-auto flex items-center justify-center overflow-visible"
+  >
+    <Image
+      src="/images/section3.png"
+      alt="iPhone showing trading application"
+      className="w-[260px] sm:w-[350px] md:w-[450px] lg:w-[500px] object-contain"
+      width={0}
+      height={0}
+      sizes="(max-width: 768px) 100vw, 50vw"
+      priority
+    />
+  </div>
+</div>
+
+
 
         {/* RIGHT SIDE CONTENT */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 sm:gap-y-14 lg:gap-x-12">
-          <FeatureBlock
+          {/* <FeatureBlock
             title="Regulated Broker"
             description="Our platform is regulated by the FSC (Financial Services Commission - Mauritius)."
           />
@@ -68,7 +101,66 @@ const HomeSectionThree = () => {
           <FeatureBlock
             title="Advanced Trading Tools"
             description="Enhance your strategy with cutting-edge trading technology."
-          />
+          /> */}
+
+          <div className="flex flex-col h-full">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+                  Regulated <br /><span className="font-medium">Broker</span>
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+                  Our platform is regulated by the FSC (Financial Services Commission - Mauritius).
+                </p>
+                
+                 </div>
+              <div className="text-right mt-auto">
+                  <LearnMoreButton />
+                </div>
+          </div>
+
+          <div className="flex flex-col h-full">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+                  Instant  <br /><span className="font-medium">Withdrawals</span>
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+                  Get your funds out quickly and easily with instant withdrawals.
+                </p>
+                
+                 </div>
+              <div className="text-right mt-auto">
+                  <LearnMoreButton />
+                </div>
+          </div>
+          <div className="flex flex-col h-full">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+                 Low <span className="font-medium">Spreads <br /> & </span>   Zero <span className="font-medium">Commissions</span>
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+                  This is a static description for the feature block. It doesn't change and is hardcoded.
+                </p>
+                
+                 </div>
+              <div className="text-right mt-auto">
+                  <LearnMoreButton />
+                </div>
+          </div>
+          <div className="flex flex-col h-full">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg md:text-xl leading-snug tading-mobile-app">
+                  Advanced  <br/><span className="font-medium">Trading Tools</span>
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed tading-mobile-app-p">
+                 Enhance your strategy with cutting-edge trading technology.
+                </p>
+                
+                
+              </div>
+              <div className="text-right mt-auto">
+                  <LearnMoreButton />
+                </div>
+          </div>
 
           {/* Logos + CTA Row */}
           <div className="col-span-1 sm:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10 mt-6">

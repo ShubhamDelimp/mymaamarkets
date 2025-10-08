@@ -83,7 +83,7 @@ const Navbar = () => {
                 </button>
               </Link>
               <Link href="https://cp.mymaamarkets.com/Home/Signup" passHref>
-                <button className='w-[150 px] h-[53px] rounded-[30px] text-[16px] bg-[#1bbf8a] px-4 py-1.5 text-sm font-medium rounded-full text-white hover:opacity-90 transition duration-300 cursor-pointer'>
+                <button className='w-[150px] h-[53px] rounded-[30px] text-[16px] bg-[#1bbf8a] px-4 py-1.5 text-sm font-medium rounded-full text-white hover:opacity-90 transition duration-300 cursor-pointer'>
                   Register
                 </button>
               </Link>

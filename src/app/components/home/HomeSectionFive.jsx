@@ -37,13 +37,13 @@ const HomeSectionFive = () => {
     <section className="py-16 bg-white overflow-hidden px-4">
       <div className="flex container flex-col w-full">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-medium text-gray-900 leading-tight meta-trade-head">
+          <h1 className="text-5xl font-medium leading-[20px] meta-trade-head text-[#0F3D62] common-heading">
             MetaTrader 5
           </h1>
-          <h2 className="text-4xl font-extrabold text-blue-600 mt-2 mb-6">
+          <h2 className="text-4xl font-extrabold text-[#006EFF] mt-2 mb-6 common-heading">
             — Your Way
           </h2>
-          <p className="text-gray-400 max-w-xl text-center sm:text-left">
+          <p className="text-gray-400 max-w-xl text-center">
             We understand that different clients have different needs. Therefore, we
             offer a wide selection of trusted, <span className="border-b ">award-winning platforms</span> and account
             types to choose from.
@@ -53,17 +53,31 @@ const HomeSectionFive = () => {
         <div className=" mx-auto px-2 sm:px-8 relative flex flex-col sm:flex-row items-center justify-center gap-8 w-full">
 
           {/* Laptop Image */}
-          <div className="relative flex-3 w-full max-w-[900px] sm:pl-30">
-            <StaticImage
-              src={IMAGES.LAPTOP_BASE}
-              alt="MetaTrader 5 devices mockup"
-              style={{ width: '100%', height: 'auto' }}
-            />
+          <div className="relative w-full max-w-[900px] sm:pl-30 sm:py-70">
+            {/* Absolute Image Container — only on lg and up */}
+            <div className="hidden lg:block absolute top-[-200px] right-0 z-10 w-[1014px] h-[764px]">
+              <StaticImage
+                src={IMAGES.LAPTOP_BASE}
+                alt="MetaTrader 5 devices mockup"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            {/* Fallback for smaller screens */}
+            <div className="block lg:hidden w-full">
+              <StaticImage
+                src={IMAGES.LAPTOP_BASE}
+                alt="MetaTrader 5 devices mockup"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
             {/* Download Button on the mockups */}
             <button className="absolute bottom-[5%] right-[5%] transform -translate-x-1/2 -translate-y-1/2 px-10 py-3 cursor-pointer bg-[#1bbf8a] text-white font-semibold rounded-full shadow-lg hover:bg-green-600 transition uppercase text-lg z-20">
               DOWNLOAD
             </button>
           </div>
+
 
           {/* Platform Icons and QR Code Section */}
           <div className="flex-1 text-center sm:text-left">

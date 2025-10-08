@@ -35,9 +35,11 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
           
           {/* Left Content */}
           <div className={`${styles.leftContent} w-full lg:w-1/2`}>
-            <h1 className={`${styles.heroTitle} text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight`}>
-              {formatWithClass(hero_section.title1)} <br />
-              {formatWithClass(hero_section.title2)}
+            <h1 className={`${styles.heroTitle} text-3xl sm:text-4xl md:text-5xl leading-tight font-semibold common-heading`}>
+              {/* {formatWithClass(hero_section.title1)} <br />
+              {formatWithClass(hero_section.title2)} */}
+              Seamless Access to 
+              <span className="font-bold"> Global Markets </span> at Your Fingertips
             </h1>
 
             {/* dotted decorative line to the right */}
@@ -69,7 +71,7 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
         <div className={`${styles.bottomStrip} mt-8 sm:mt-12`}>
           <div className={`${styles.features} flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-12`}>
             {hero_section.feature.map((f, i) => (
-              <div key={i} className={`${styles.featureItem} flex-1 min-w-[140px]`}>
+              <div key={i} className={`${styles.featureItem} flex-1 `}>
                 <p className={`${styles.featureTitle} text-sm sm:text-base`}>{f.title}</p>
                 <h3 className={`${styles.featureValue} text-lg sm:text-xl`}>{f.description}</h3>
               </div>

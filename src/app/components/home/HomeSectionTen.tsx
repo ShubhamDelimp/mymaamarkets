@@ -39,18 +39,15 @@ const HomeSectionTen = () => {
   return (
     <div
       className="w-full from-blue-50 via-white to-blue-50 py-12 sm:py-16 md:py-20 lg:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/Group1597881029.jpg')" }}
+      style={{ backgroundImage: "url('/images/client-say-bg.png')" }}
     >
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start py-10 md:py-20">
           {/* Left Side - Heading & Button */}
           <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 mb-2">
-                See What Our
-              </h2>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600">
-                Clients Say
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium text-[#0F3D62] mb-2 common-heading">
+                See What Our <br/> <span className="font-bold text-[#006EFF]"> Clients </span> Say
               </h2>
             </div>
 
@@ -74,7 +71,7 @@ const HomeSectionTen = () => {
 
             {/* CTA Button */}
             <Link href="https://cp.mymaamarkets.com/Home/Signup" passHref>
-              <button className="bg-[#1bbf8a] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base uppercase tracking-wide mt-10 sm:mt-14">
+              <button className="bg-[#19C69A] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base uppercase tracking-wide mt-10 sm:mt-14">
                 OPEN LIVE ACCOUNT
               </button>
             </Link>

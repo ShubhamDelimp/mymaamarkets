@@ -8,11 +8,11 @@ interface StatItemProps {
 
 const StatItem = ({ value, label }: StatItemProps) => (
   <div className="flex items-center gap-3 sm:gap-4">
-    <div className="border-l-2 border-[#0070f3] h-12 sm:h-16" />
+    <div className="border-l-2 border-[#006EFF] h-12 sm:h-18" />
     <div>
-      <div className="text-[#0070f3] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">{value}</div>
+      <div className="text-[#006EFF] text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">{value}</div>
       <div className="text-[#1a3553] text-xs sm:text-sm md:text-base font-medium">
-        {label.split(' ').map((line, i) => (
+        {label.split('.').map((line, i) => (
           <span key={i} className="block">{line}</span>
         ))}
       </div>
@@ -35,24 +35,24 @@ export default function GlobalPresenceSection() {
 
         {/* Left image (desktop only) */}
         <div className="hidden lg:flex justify-center items-center">
-          <Image
+          {/* <Image
             src="/images/globe.png"
             alt="Globe"
             width={500}
             height={500}
             className="max-w-full h-auto"
-          />
+          /> */}
         </div>
 
         {/* Right content */}
         <div className="flex-1 flex flex-col items-start justify-center max-w-full lg:max-w-xl space-y-6 sm:space-y-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-[#1a3553] leading-tight">
-            <span className="text-[#0070f3] font-bold">Global</span> Presence
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#0F3D62] leading-tight common-heading">
+            <span className="text-[#006EFF] font-bold">Global</span> Presence
             <br />
-            <span className="text-[#0070f3] font-bold">Local</span> Support
+            <span className="text-[#006EFF] font-bold">Local</span> Support
           </h2>
 
-          <p className="text-gray-500 text-sm sm:text-base md:text-base">
+          <p className="text-[#87919C] text-sm sm:text-base md:text-base">
             At MY MAA MARKETS LTD, we specialize in connecting markets and facilitating
             trade across the globe. Our commitment to excellence and customer
             satisfaction sets us apart in the competitive world of international trade.
@@ -66,7 +66,7 @@ export default function GlobalPresenceSection() {
             <StatItem value="12,000+" label="Partners" />
           </div>
 
-          <button className="bg-[#19c69a] text-white px-8 sm:px-10 py-3 sm:py-3 rounded-full font-bold text-sm sm:text-base shadow hover:bg-[#17b08e] transition w-fit">
+          <button className="bg-[#19C69A] text-white px-8 sm:px-10 py-3 sm:py-3 rounded-full font-bold text-sm sm:text-base shadow hover:bg-[#17b08e] transition w-fit">
             OPEN LIVE ACCOUNT
           </button>
         </div>
