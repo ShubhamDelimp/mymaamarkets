@@ -404,6 +404,21 @@
                             font-family: 'Outfit' !important;
                         }
                         
+                        
+                        .tradingview-widget-container {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 15px;
+                            margin: 10px 0;
+                        }
+                        
+                        .tv-embed-widget-wrapper {
+                            background-color: white !important;
+                            padding: 0;
+                            margin: 0;
+                            border: none;
+                        }
+
                         @media screen and (max-width:1600px) {
                             h1 {
                                 font-size: 3.5rem;
@@ -492,29 +507,6 @@
                             }
                         }
                         
-                        .tradingview-widget-container {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            gap: 15px;
-                            margin: 10px 0;
-                        }
-                        /* .tradingview-widget-container {
-    background-color: white !important;
-    padding: 0;
-    margin: 0;
-    border: none;
-} */
-                        
-                        .tv-embed-widget-wrapper {
-                            background-color: white !important;
-                            padding: 0;
-                            margin: 0;
-                            border: none;
-                        }
-                        /* .tradingview-widget-container__widget {
-    background-color: white !important;
-} */
                         
                         @media (max-width: 768px) {
                             .tradingview-widget-container {

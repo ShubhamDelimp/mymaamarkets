@@ -76,11 +76,12 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
                 <h3 className={`${styles.featureValue} text-lg sm:text-xl`}>{f.description}</h3>
               </div>
             ))}
-            <div className={`${styles.widgetsGroup} flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-4 sm:mt-0`}>
+          </div>
+          
+            <div className={`${styles.widgetsGroup} flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-4 mb-4 sm:mt-0`}>
               <TradingViewWidget />
               <button className={styles.registerBtn}>REGISTER</button>
             </div>
-          </div>
         </div>
       </div>
     </section>
