@@ -7,7 +7,7 @@ const HomeSectionSeven = () => {
       <div className="w-full mx-auto px-6 flex flex-col lg:flex-row lg:items-center lg:justify-start gap-y-12 lg:gap-x-20 relative">
         
         {/* Left Content */}
-        <div className="lg:w-1/2 space-y-6 lg:pl-[200px] lg:pb-[230px] text-center lg:text-left">
+        <div className="lg:w-1/2 space-y-6 lg:pl-[clamp(50px,10vw,200px)] lg:pb-[230px] text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl leading-tight common-heading">
             <span className="text-[#006EFF] font-bold"> Easy </span>
             <span className="text-[#0F3D62] font-medium"> Deposits</span>
@@ -85,13 +85,11 @@ const HomeSectionSeven = () => {
             </button>
           </div>
 
-          <div className="hidden lg:block mt-10 lg:absolute bottom-0 z-10">
-            <Image
+          <div className="hidden lg:block mt-10 lg:absolute bottom-0 z-10 custom-phone-img">
+            <img
               src="/images/phone_img.png"
               alt="Mobile App"
-              width={890}
-              height={602}
-              className="mx-auto lg:mx-0 w-[90%] sm:w-[70%] lg:w-auto"
+              className=""
             />
           </div>
         </div>

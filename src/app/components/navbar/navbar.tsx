@@ -57,12 +57,12 @@ const Navbar = () => {
             {/* Link to homepage using locale for consistency */}
             <Link href={`/${locale}`}>
               {/* Image adjusted for mobile/desktop, using a smaller size */}
-              <Image width={280} height={52} alt='logo' src='/images/logo-full.png' priority className=' ' />
+              <img alt='logo' src='/images/logo-full.png' className='nav-logo' />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className='hidden lg:flex items-center justify-center flex-grow'>
+          <div className='hidden lg:flex items-center justify-center flex-grow nav-menu'>
             <ul className={styles.menuList}>
               <li><a href={`/${locale}`} className={`${styles.link} hover:text-cyan-400 transition duration-300`}>Markets</a></li>
               <li><Link href={`/${locale}/trading`} className={`${styles.link} hover:text-cyan-400 transition duration-300`}>Trading</Link></li>
@@ -78,12 +78,12 @@ const Navbar = () => {
           <div className='flex items-center space-x-3'>
             <div className='hidden sm:flex space-x-4'>
               <Link href="https://cp.mymaamarkets.com/" passHref>
-                <button className='w-[113px] h-[53px] rounded-[30px] text-[16px] btn-outline px-4 py-1.5 text-sm font-medium border border-cyan-500 text-cyan-500 rounded-full hover:bg-cyan-500 hover:text-gray-900 transition duration-300 cursor-pointer' >
+                <button className='login-btn' >
                   Login
                 </button>
               </Link>
               <Link href="https://cp.mymaamarkets.com/Home/Signup" passHref>
-                <button className='w-[150px] h-[53px] rounded-[30px] text-[16px] bg-[#1bbf8a] px-4 py-1.5 text-sm font-medium rounded-full text-white hover:opacity-90 transition duration-300 cursor-pointer'>
+                <button className='reg-btn'>
                   Register
                 </button>
               </Link>

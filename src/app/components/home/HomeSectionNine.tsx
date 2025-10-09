@@ -53,7 +53,7 @@ const HomeSectionNine: React.FC = () => {
         <span className="text-[#006EFF] font-bold">Recognitions</span>
       </h2>
     </div>
-    <div className="relative w-full  bg-white sm:pb-16">     
+    <div className="relative w-full  bg-white sm:pb-16 overflow-hidden">     
 
       <div className="pt-8 sm:pt-10 w-full mx-auto flex flex-col items-center sm:px-4 md:px-6 lg:px-8 space-y-10">
 
@@ -80,7 +80,7 @@ const HomeSectionNine: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full container flex justify-center lg:justify-start items-center gap-4" >
+          <div className="w-full container flex justify-center lg:justify-start items-center gap-4 py-[100px]" >
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
@@ -218,11 +218,11 @@ const HomeSectionNine: React.FC = () => {
           
         </div>
       </div>
-       {/* <img
-                src="./images/bull.png"
+       <img
+                src="./images/bull-2.png"
                 alt="MetaTrader 5 devices mockup"
                 className="w-full h-full object-contain hidden lg:block absolute bull-img z-10"
-              /> */}
+              />
     </div>
     </div>
   );
