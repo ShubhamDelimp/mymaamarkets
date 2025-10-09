@@ -301,6 +301,9 @@
                             background: unset !important;
                             border: none !important;
                         }
+                        .font-arrow{
+                            font-size:  clamp(16px, 1vw, 20px);    
+                            }
                         .counter-strip{
                             
     background: rgba(39, 32, 92, .15);
@@ -312,15 +315,15 @@
                         .home-counter{
                             font-size: clamp(35px, 4vw, 60px) !important;
 
-    margin-left: 10px;
+                            margin-left: 0px;
 
-    font-weight: 800;
+                            font-weight: 800;
 
-    background: #38e3ff;
+                            background: #38e3ff;
 
-    -webkit-background-clip: text;
+                            -webkit-background-clip: text;
 
-    -webkit-text-fill-color: transparent
+                            -webkit-text-fill-color: transparent
  
                         }
                         
@@ -471,6 +474,11 @@
                             .content-part{
                             width: 100% !important
                         }
+                            
+                            p.counter-title{
+                                width: 100% !important;
+                                margin-right: 0px;
+                            }
                         }
                         
                         @media screen and (min-width: 1024px) and (max-width: 1440px) {

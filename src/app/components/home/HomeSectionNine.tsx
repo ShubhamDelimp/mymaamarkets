@@ -80,7 +80,7 @@ const HomeSectionNine: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full container flex justify-center lg:justify-start items-center gap-4 py-[100px]" >
+          <div className="w-full container flex justify-center lg:justify-start items-center gap-4 sm:py-[100px]" >
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
@@ -118,13 +118,13 @@ const HomeSectionNine: React.FC = () => {
               >
                 {idx === 2 ? (
                   <div className="w-full h-full bg-gradient-to-br from-[#0066FF] to-[#0052CC] flex flex-col items-center justify-center p-6 relative">
-                    <h4 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-center mb-4 pt-[50px]">
+                    <h4 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-center mb-4 sm:pt-[50px]">
                       Try Free <br /> Demo
                     </h4>
                     <p className="text-white text-xs sm:text-sm md:text-base text-center mb-6 max-w-[280px] leading-relaxed ">
                       Learn to trade the markets or test your trading strategies.
                     </p>
-                    <button className="text-[#006EFF] mt-auto bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
+                    <button className="text-[#006EFF] mt-auto bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] font-arrow flex items-center justify-center">
                         ↗
                       </button>
                   </div>
@@ -140,7 +140,7 @@ const HomeSectionNine: React.FC = () => {
                       <h4 className="font-bold text-sm sm:text-base md:text-lg">
                         {item.title}
                       </h4>
-                      <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
+                      <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] font-arrow flex items-center justify-center">
                         ↗
                       </button>
                     </div>
@@ -162,7 +162,7 @@ const HomeSectionNine: React.FC = () => {
                 <h4 className="font-bold text-base sm:text-lg md:text-xl">
                   Trading Courses
                 </h4>
-                <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
+                <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] font-arrow flex items-center justify-center">
                   ↗
                 </button>
               </div>

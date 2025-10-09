@@ -105,7 +105,7 @@ const Navbar = () => {
           {/* Top Bar items on mobile */}
           <li className='sm:hidden pt-2 border-t border-gray-700'><Link href={`/${locale}/partnership`} onClick={toggleMenu} className={`${styles.mobileLink}`}>PARTNERSHIP</Link></li>
           <li className='sm:hidden'><Link href={`/${locale}/contact`} onClick={toggleMenu} className={`${styles.mobileLink}`}>CONTACT US</Link></li>
-          <li className='sm:hidden'>
+          <li className='hidden'>
             <div className='flex items-center justify-between'>
               <span className='text-xs text-gray-400'>Locale:</span> <LocaleSwitcher />
             </div>

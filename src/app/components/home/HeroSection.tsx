@@ -49,13 +49,14 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
               {hero_section.description}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mt-6 sm:mt-8">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mt-6 sm:mt-8">
               <Link href="https://cp.mymaamarkets.com/Home/Signup" passHref>
                 <button className={styles.openBtn}>{hero_section.button1}</button>
               </Link>
               <Link
                 href="https://cp.mymaamarkets.com/Home/Signup"
-                className={styles.demoLink}
+                  className="ml-0 lg:ml-[20px] underline"
+                
                 passHref
               >
                 {hero_section.button2}
@@ -68,11 +69,11 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
         </div>
 
         {/* BOTTOM STRIP */}
-        <div className={`${styles.bottomStrip} mt-8 sm:mt-12 counter-strip`}>
+        <div className={`${styles.bottomStrip} sm:mt-8 counter-strip`}>
           <div className={`${styles.features} flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-12 counter-strip-wrapper`}>
             {hero_section.feature.map((f, i) => (
               <div key={i} className={`${styles.featureItem}`}>
-                <p className={`${styles.featureTitle} text-sm sm:text-base`}>{f.title}</p>
+                <p className={`${styles.featureTitle} text-sm sm:text-base counter-title`}>{f.title}</p>
                 <h3 className="text-lg sm:text-xl home-counter">{f.description}</h3>
               </div>
             ))}
