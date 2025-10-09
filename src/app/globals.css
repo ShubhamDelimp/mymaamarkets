@@ -103,6 +103,8 @@
                             /* Responsive horizontal position */
                             overflow: hidden;
                             transform: rotate(0deg);
+                            filter: drop-shadow(14px 10px 14px #d39c51ad);
+ 
                         }
                         /* Medium screens (â‰¥768px) */
                         
@@ -113,7 +115,7 @@
                         }
                         /* Large screens (â‰¥1024px) */
                         
-                        @media (min-width: 1024px) {
+                        @media (min-width: 1240px) {
                             .bull-img {
                                 width: 1010px;
                                 top: -514px;
@@ -324,7 +326,7 @@
                             max-width: unset !important;
                         }
                         h3.home-module__aUD9Yq__featureValue {
-                            font-size: clamp(35px, 2vw, 60px);
+                            font-size: clamp(35px, 4vw, 60px);
                         }
                         
                         p.home-module__aUD9Yq__featureTitle {
