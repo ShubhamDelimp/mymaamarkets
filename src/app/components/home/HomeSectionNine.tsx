@@ -124,9 +124,9 @@ const HomeSectionNine: React.FC = () => {
                     <p className="text-white text-xs sm:text-sm md:text-base text-center mb-6 max-w-[280px] leading-relaxed ">
                       Learn to trade the markets or test your trading strategies.
                     </p>
-                    <button className="text-[#006EFF] mt-auto bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[28px] sm:text-[34px] md:text-[38px] flex items-center justify-center">
-                      ↗
-                    </button>
+                    <button className="text-[#006EFF] mt-auto bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
+                        ↗
+                      </button>
                   </div>
                 ) : (
                   <>
@@ -140,7 +140,7 @@ const HomeSectionNine: React.FC = () => {
                       <h4 className="font-bold text-sm sm:text-base md:text-lg">
                         {item.title}
                       </h4>
-                      <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[28px] sm:text-[34px] md:text-[38px] flex items-center justify-center">
+                      <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
                         ↗
                       </button>
                     </div>
@@ -162,7 +162,7 @@ const HomeSectionNine: React.FC = () => {
                 <h4 className="font-bold text-base sm:text-lg md:text-xl">
                   Trading Courses
                 </h4>
-                <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[28px] sm:text-[34px] md:text-[38px] flex items-center justify-center">
+                <button className="text-[#006EFF] bg-white rounded-full w-[45px] sm:w-[50px] md:w-[55px] h-[45px] sm:h-[50px] md:h-[55px] text-[clamp(18px, 3vw, 28px)] flex items-center justify-center">
                   ↗
                 </button>
               </div>

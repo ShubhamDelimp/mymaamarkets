@@ -458,6 +458,9 @@
                             .broker {
                                 font-size: 8px;
                             }
+                            .content-part{
+                            width: 100% !important
+                        }
                         }
                         
                         @media screen and (min-width: 1024px) and (max-width: 1440px) {
