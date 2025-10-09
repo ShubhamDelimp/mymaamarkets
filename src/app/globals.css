@@ -106,24 +106,6 @@
                             filter: drop-shadow(14px 10px 14px #d39c51ad);
  
                         }
-                        /* Medium screens (â‰¥768px) */
-                        
-                        @media (max-width: 1240px) {
-                            .bull-img {
-                                display: none;
-                            }
-                        }
-                        /* Large screens (â‰¥1024px) */
-                        
-                        @media (min-width: 1240px) {
-                            .bull-img {
-                                width: 1010px;
-                                top: -516px;
-                                right: -130px;
-                                transform: translate(-65px 0px);
-                            }
-                        }
-                        
                         .available-on p span {
                             font-size: 22px;
                             color: #0F3D62;
@@ -517,3 +499,23 @@
                             
                        
                         }
+
+                        
+                        /* Medium screens (â‰¥768px) */
+                        
+                        @media (max-width: 1240px) {
+                            .bull-img {
+                                display: none;
+                            }
+                        }
+                        /* Large screens (â‰¥1024px) */
+                        
+                        @media (min-width: 1240px) {
+                            .bull-img {
+                                width: 1010px;
+                                top: -516px;
+                                right: -130px;
+                                transform: translate(-65px 0px);
+                            }
+                        }
+                        
