@@ -294,16 +294,6 @@
                             max-width: 1420px;
                             margin: 0 auto;
                         }
-                        @media (max-width: 1200px) {
-                            .container-fluid {
-                                max-width: 1400px;
-                                margin: 0 auto;
-                                padding: auto;
-                                
-                            }
-                            
-                       
-                        }
                         
                        
                         button.home-module__aUD9Yq__openBtn {
@@ -515,4 +505,15 @@
                                 flex-direction: column;
                                 gap: 20px;
                             }
+                        }
+                        
+                        @media (max-width: 1200px) {
+                            .container-fluid {
+                                max-width: 1400px;
+                                margin: 0 auto;
+                                padding: auto;
+                                
+                            }
+                            
+                       
                         }
