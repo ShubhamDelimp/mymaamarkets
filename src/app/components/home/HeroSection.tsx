@@ -68,8 +68,8 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
         </div>
 
         {/* BOTTOM STRIP */}
-        <div className={`${styles.bottomStrip} mt-8 sm:mt-12`}>
-          <div className={`${styles.features} flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-12`}>
+        <div className={`${styles.bottomStrip} mt-8 sm:mt-12 counter-strip`}>
+          <div className={`${styles.features} flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-12 counter-strip-wrapper`}>
             {hero_section.feature.map((f, i) => (
               <div key={i} className={`${styles.featureItem}`}>
                 <p className={`${styles.featureTitle} text-sm sm:text-base`}>{f.title}</p>

@@ -297,7 +297,18 @@
                         .home-module__aUD9Yq__leftContent{
                             max-width: unset !important;
                         }
-                        
+                        .counter-strip-wrapper{
+                            background: unset !important;
+                            border: none !important;
+                        }
+                        .counter-strip{
+                            
+    background: rgba(39, 32, 92, .15);
+    padding: 2px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, .06);
+    width:100% ;
+                        }
                         .home-counter{
                             font-size: clamp(35px, 4vw, 60px) !important;
 
