@@ -298,8 +298,19 @@
                             max-width: unset !important;
                         }
                         
-                        h3.home-module__aUD9Yq__featureValue {
-                            font-size: clamp(35px, 4vw, 60px);
+                        .home-counter{
+                            font-size: clamp(35px, 4vw, 60px) !important;
+
+    margin: 0;
+
+    font-weight: 800;
+
+    background: #38e3ff;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent
+ 
                         }
                         
                         p.home-module__aUD9Yq__featureTitle {

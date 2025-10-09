@@ -73,7 +73,7 @@ export default function HeroSection({ hero_section }: HeroSectionProps) {
             {hero_section.feature.map((f, i) => (
               <div key={i} className={`${styles.featureItem}`}>
                 <p className={`${styles.featureTitle} text-sm sm:text-base`}>{f.title}</p>
-                <h3 className={`${styles.featureValue} text-lg sm:text-xl`}>{f.description}</h3>
+                <h3 className="text-lg sm:text-xl home-counter">{f.description}</h3>
               </div>
             ))}
           </div>
