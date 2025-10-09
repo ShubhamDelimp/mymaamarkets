@@ -301,7 +301,7 @@
                         .home-counter{
                             font-size: clamp(35px, 4vw, 60px) !important;
 
-    margin: 0;
+    margin-left: 10px;
 
     font-weight: 800;
 
