@@ -1,5 +1,8 @@
-import Image from 'next/image';
-import React from 'react';
+"use client";
+
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
 
 interface StatItemProps {
   value: string;
@@ -7,7 +10,13 @@ interface StatItemProps {
 }
 
 const StatItem = ({ value, label }: StatItemProps) => (
-  <div className="flex items-center gap-3 sm:gap-4">
+  <motion.div
+    className="flex items-center gap-3 sm:gap-4"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+  >
     <div className="border-l-2 border-[#006EFF] h-12 sm:h-18" />
     <div>
       <div className="text-[#006EFF] text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">{value}</div>
@@ -17,7 +26,7 @@ const StatItem = ({ value, label }: StatItemProps) => (
         ))}
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default function GlobalPresenceSection() {
@@ -31,10 +40,16 @@ export default function GlobalPresenceSection() {
         bg-no-repeat bg-center bg-cover
       "
     >
-      <div className="relative z-10 container mx-auto px-6 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
+      <motion.div
+        className="relative z-10 container mx-auto px-6 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
         {/* Left image (desktop only) */}
         <div className="hidden lg:flex justify-center items-center">
+          {/* Uncomment if you want the globe image inside */}
           {/* <Image
             src="/images/globe.png"
             alt="Globe"
@@ -70,8 +85,7 @@ export default function GlobalPresenceSection() {
             OPEN LIVE ACCOUNT
           </button>
         </div>
-
-      </div>
+      </motion.div>
     </section>
   );
 }

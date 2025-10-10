@@ -417,6 +417,10 @@
                             border: none;
                         }
 
+                        .counter-strip-wrapper {
+                            width: 70% !important;
+                    }
+
                         @media screen and (max-width:1600px) {
                             h1 {
                                 font-size: 3.5rem;
@@ -462,6 +466,9 @@
                             h3 {
                                 font-size: 1rem;
                             }
+                            .counter-strip-wrapper {
+                            width: 100% !important;
+                    }
                         }
                         
                         @media screen and (max-width: 640px) {
@@ -548,7 +555,7 @@
                                 width: 1010px;
                                 top: -516px;
                                 right: -130px;
-                                transform: translate(-65px 0px);
+                                transform: translate(-65px);
                             }
                         }
                         
