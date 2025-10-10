@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation , easeOut} from "framer-motion";
 
 const HomeSectionSeven = () => {
   const ref = useRef(null);
@@ -17,7 +17,7 @@ const HomeSectionSeven = () => {
 
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easeOut } },
   };
 
   const container = {
